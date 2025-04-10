@@ -13,13 +13,13 @@ createRoot(document.getElementById('root')).render(
 
   <Auth0Provider
     domain="dev-vwej160uu55axhgf.us.auth0.com"
-    clientId="mHTDgpGvGR9WbYdf5wURI5qjQOkEJZxv"
+    clientId="KED3hSMZAtmeCc7iULBa8jVSkJ0IYd5y"
     authorizationParams={{
-      redirect_uri: window.location.origin,
+      redirect_uri: window.location.origin
     }}
   >
     <App />
-  </Auth0Provider>, 
+  </Auth0Provider>,
     <ToastContainer
 position="top-right"
 autoClose={5000}

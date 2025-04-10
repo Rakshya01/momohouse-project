@@ -428,7 +428,6 @@ function Home() {
         </div>
       </div>
 
-      <div>map</div>
 
       <iframe
         className="m-auto"
