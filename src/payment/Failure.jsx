@@ -16,7 +16,6 @@ function Failure() {
           <div>
             <h1>
               Status:Fail
-              <span className="underline bg-green-300">{info?.status}</span>
             </h1>
           </div>
         </div>
