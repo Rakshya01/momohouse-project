@@ -18,23 +18,35 @@ import ProtectedRoutes from "./Auth/ProtectedRoutes";
 function App() {
   return (
     <>
-    <Navigation/>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/allergyadvice" element={<AllergyAdvice />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/menu" element={<ProtectedRoutes components={<Menu/>}/>} />
+        <Route
+          path="/menu"
+          element={<ProtectedRoutes components={<Menu />} />}
+        />
         <Route path="/services" element={<Services />} />
-        <Route path="/productdescription/:id" element={<ProtectedRoutes components={<ProductDescription/>}/>} />
+        <Route
+          path="/productdescription/:id"
+          element={<ProtectedRoutes components={<ProductDescription />} />}
+        />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/payment" element={<ProtectedRoutes components={<Payment/>}/>} />
-        <Route path="/success" element={<ProtectedRoutes components={<Success/>}/>} />
-        <Route path="/failure" element={<ProtectedRoutes components={<Failure/>}/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/profile" element={<ProtectedRoutes components={<Profile/>}/>} />
+        <Route
+          path="/payment"
+          element={<ProtectedRoutes components={<Payment />} />}
+        />
+        <Route path="/success" element={<Success />} />
+        <Route path="/failure" element={<Failure />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/profile"
+          element={<ProtectedRoutes components={<Profile />} />}
+        />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
