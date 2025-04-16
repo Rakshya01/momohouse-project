@@ -22,4 +22,4 @@ function ProtectedRoutes({components}) {
 
 }
 
-export default ProtectedRoutes
+export default ProtectedRoutes   
