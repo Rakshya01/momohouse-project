@@ -6,6 +6,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,12 +15,15 @@ function Footer() {
         <div className="flex justify-between p-7 ml-10 mr-10 ">
           <div>
             <div className="flex gap-2  ">
-              <img
+              
+               <img
                 className="w-[40px] mt-2 h-[34px]"
                 src={momo}
                 alt="momologo"
               />
+             <NavLink to="/">
               <h1 className="text-[31px] font-bold text-[#0C6967]">momos</h1>
+              </NavLink>
             </div>
             <p className="w-[392px] text-[16px] text-[#6B788E]">
               Lorem ipsum dolor sit amet consectetur. Elit sem tempor egestas
@@ -31,10 +35,23 @@ function Footer() {
           <div>
             <h1 className="text-[#0C6967] text-[25px] font-bold">momos</h1>
             <div className="">
-              <p className="text-[#252D43] text-[16px]">About Us</p>
+              <NavLink to="/about">
+                
+                <p className="text-[#252D43] text-[16px]">About Us</p>
+                </NavLink>
+
+                <NavLink to="/menu">
+
               <p className="text-[#252D43] text-[16px]">Our Menu</p>
+                </NavLink>
+                <NavLink to="/services">
+
               <p className="text-[#252D43] text-[16px]">Our Services</p>
+                </NavLink>
+                <NavLink to="/contact">
+
               <p className="text-[#252D43] text-[16px]">Contact Us</p>
+                </NavLink>
             </div>
           </div>
 
@@ -50,12 +67,31 @@ function Footer() {
           <div className="flex flex-col items-center  ">
             <h1 className="text-[#0C6967] text-[25px] font-bold">Follow Us</h1>
             <div className="text-[#A6AEBB] flex flex-wrap justify-center w-[168px] gap-6">
+             <NavLink to="https://www.facebook.com/"> 
+
               <FaFacebook size={25} />
+              </NavLink> 
+
+              <NavLink to="https://np.linkedin.com/">
+
               <FaLinkedin size={25} />
+              </NavLink>
+              <NavLink to="https://www.twitter.com/">
+
               <AiFillTwitterCircle size={25} />
+              </NavLink>
+              <NavLink to="https://www.youtube.com/">
+
               <FaYoutubeSquare size={25} />
+              </NavLink>
+              <NavLink to="https://www.instagram.com/">
+
               <FaInstagramSquare size={25} />
+              </NavLink>
+              <NavLink to="https://www.tiktok.com/en/">
+
               <AiFillTikTok size={25} />
+              </NavLink>
             </div>
           </div>
         </div>

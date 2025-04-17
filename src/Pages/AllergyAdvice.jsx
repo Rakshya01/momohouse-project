@@ -8,8 +8,7 @@ import scan from "../assets/Scan.png"
 function AllergyAdvice() {
   return (
     <>
-      {/* Top Section */}
-      <div className="flex justify-between items-start px-10 py-16 flex-wrap">
+      <div className="flex justify-between items-start p-30 flex-wrap">
         <div className="max-w-xl">
           <h1 className="text-[56px] text-[#0C6967] font-bold">
             Allergy Advices

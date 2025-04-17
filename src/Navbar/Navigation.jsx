@@ -17,7 +17,7 @@ console.log(isAuthenticated);
     return acc+product.qty;
   },0)
   return (
-    <div className=" flex  text-[17px]    justify-around  p-4">
+    <div className=" flex  text-[17px]    justify-around  p-4 border-b-1 border-gray-500">
       <div className="flex   gap-x-2  justify-center  items-center ">
         <img src={momologo} alt="" />
         <NavLink to="/" className="text-green-700 text-[22px]  font-bold  ">
@@ -32,7 +32,7 @@ console.log(isAuthenticated);
         
         <NavLink className=" relative " to="/cart">
         
-          <span className=" absolute left-4 text-xs flex justify-center items-center bg-red-600 rounded-full h-5 w-5  text-center font-bold text-white ">{totalItem}</span>
+          <span className=" absolute left-4 -top-2 text-xs flex justify-center items-center bg-red-600 rounded-full h-5 w-5  text-center font-bold text-white ">{totalItem}</span>
         <TiShoppingCart   size={30}/>
         
         </NavLink>

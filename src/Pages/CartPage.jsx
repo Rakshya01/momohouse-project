@@ -111,7 +111,7 @@ function CartPage() {
             
             
             <div className=" w-96 m-auto text-center ">
-              <img src="https://chillydraji.wordpress.com/wp-content/uploads/2015/08/empty_cart.jpeg" alt="cart is empty" />
+              <img src="https://cdn-icons-png.flaticon.com/512/11329/11329060.png" alt="cart is empty" />
               <h1 className="text-2xl">Cart is Empty</h1>
 
             <NavLink className="text-xl text-green-400 underline" to="/menu">Shop Now</NavLink>
